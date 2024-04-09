@@ -18,12 +18,5 @@ pipeline {
                 bat 'mvn test'
             }
         }
-        
-        stage('Create Docker Image') {
-            steps {
-                // Build Docker image
-                sh 'docker build -t yourimagename .'
-            }
-        }
     }
 }
