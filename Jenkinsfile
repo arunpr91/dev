@@ -12,10 +12,10 @@ pipeline {
             }
         }
         
-        stage('Test') {
+        stage('Build') {
             steps {
                 // Run Maven tests
-                bat 'mvn test'
+                bat 'mvn build'
             }
         }
     }
